@@ -127,3 +127,34 @@ footer {
   font-family: "Lato", sans-serif;
   padding: 10px 0;
 }
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border: 2px solid #000;
+  width: 300px;
+  background-color: wheat;
+  padding: 20px;
+  border-radius: 9px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  border-radius: 9px;
+}
+.card-body {
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+.card-text {
+  line-height: 1.5;
+}
+.btn-order {
+  padding: 5px 20px;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 9px;
+}
