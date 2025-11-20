@@ -1,58 +1,66 @@
 * {
-  /*reseting rules */
+  /* resetting rules */
   padding: 0;
   margin: 0;
-  background-color: #f0e2c5;
   box-sizing: border-box;
-  color: #49281a;
+  color: rgb(64, 19, 34);
 }
+
 html {
   scroll-behavior: smooth;
+}
+/* header section */
+header {
+  /* border: 2px solid #000; */
+  background-image: url(images/7f4fb4ffbb78dee014287b759b1bb1ce.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  display: block;
+  unicode-bidi: isolate;
 }
 header h1 {
   font-family: "Playfair Display SC", serif;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 header p {
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
-  margin-bottom: 30px;
+  margin-bottom: 55px;
 }
-
-/*header section*/
-header {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  padding: 100px 0;
-}
-
 header a {
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
-  background-color: #49281a;
-  color: #f0e2c5;
-  text-align: center;
+  background-color: palevioletred;
+  color: rgb(64, 19, 34);
   padding: 15px 30px;
   border-radius: 9px;
+}
+body,
+#our-menu p {
+  background-color: lavender;
 }
 
 /* nav section */
 nav {
-  text-align: center;
-  background-color: #f0e2c5;
+  /* border: 2px solid #000; */
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
+  text-align: center;
+
+  /* background-color: #49281a; */
   padding: 25px 0;
 }
-
 nav a {
-  background-color: #49281a;
+  background-color: palevioletred;
+  color: rgb(64, 19, 34);
   text-decoration: none;
-  color: #f0e2c5;
   margin-right: 20px;
+  /* padding: 15px; */
 
   display: inline-block;
   width: 150px;
@@ -61,7 +69,7 @@ nav a {
   border-radius: 9px;
 }
 
-/*our menu section*/
+/* our-menu section */
 #our-menu,
 #about-us,
 #contact,
@@ -74,19 +82,53 @@ footer {
 #contact h2 {
   font-family: "Playfair Display SC", serif;
   font-size: 2rem;
-  margin: 2px 0;
+  margin: 20px 0;
 }
-/*about us section */
-#about-us p,
-#contact p {
-  font-family: "Lato", serif;
-  font-size: 1.2em;
-  text-align: justify;
-  padding: 10px;
+#our-menu h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  border: 2px solid rgb(93, 33, 53);
+  width: 300px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 9px;
+}
+.card-img-top {
+  max-width: 100%;
+  border-radius: 9px;
+}
+.card-body {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-text {
   line-height: 1.5;
 }
+.btn-order {
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: palevioletred;
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 9px;
+}
+/* about-us section */
+#about-us p,
+#contact p {
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+  padding: 10px 0;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
 
-/*contact section*/
+/* contact section */
 form {
   width: 80%;
   margin: 10px auto;
@@ -96,7 +138,6 @@ form {
 form div {
   padding: 15px 0;
 }
-
 .form-label {
   display: inline-block;
   width: 150px;
@@ -107,12 +148,12 @@ form div {
   width: 300px;
   border: none;
   outline: none;
-  border-bottom: 1px dotted #49281a;
+  border-bottom: 1px dotted;
+  background-color: lavenderblush;
 }
-
 .btn-submit {
-  background-color: #49281a;
-  color: #f0e2c5;
+  background-color: palevioletred;
+  color: rgb(64, 19, 34);
   width: 200px;
   height: 50px;
   margin-left: 160px;
@@ -120,37 +161,15 @@ form div {
   outline: none;
   border-radius: 9px;
 }
-
-/*footer section*/
+/* footer section */
 footer {
   text-align: center;
   font-family: "Lato", sans-serif;
   padding: 10px 0;
 }
 
-.card {
-  border: 2px solid #000;
-  width: 300px;
-  background-color: wheat;
-  padding: 20px;
-  border-radius: 9px;
-}
-
-.card-img-top {
-  max-width: 100%;
-  border-radius: 9px;
-}
-.card-body {
-  text-align: center;
-  font-family: Verdana, sans-serif;
-}
-.card-text {
-  line-height: 1.5;
-}
-.btn-order {
-  padding: 5px 20px;
-  background-color: #000;
-  color: white;
-  text-decoration: none;
-  border-radius: 9px;
+footer a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
